@@ -1,0 +1,22 @@
+create table Test(rollno integer PRIMARY KEY, fname varchar(50),lname varchar(50),dept_id integer, semester integer,gender varchar(20));
+-- Your code here!
+insert into Test values(1,'ankur','das',1,1,'M');
+insert into Test values(2,'debdas','saha',1,1,'M');
+insert into Test values(3,'ankita','sarkar',1,1,'F');
+insert into Test values(10,'kamal','pal',2,3,'F');
+insert into Test values(13,'amit','das',3,3,'M');
+insert into Test values(23,'jinat','aman',2,1,'F');
+insert into Test values(22,'ganesh','patel',2,3,'M');
+insert into Test values(4,'shweta','patel',3,1,'F');
+insert into Test values(7,'purabi','basu',3,1,'F');
+insert into Test values(8,'krishna','roy',2,3,'M');
+insert into Test values(43,'archana','subba',1,1,'F');
+
+create table dept(dept_iid integer, dept_name varchar(100));
+insert into dept values(1,'CSE');
+insert into dept values(2,'ECE');
+insert into dept values(3,'ME');
+insert into dept values(4,'IT');
+insert into dept values(5,'EE');
+
+select fname,lname,dept_id from Test;
